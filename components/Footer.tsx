@@ -374,21 +374,21 @@ export default function Footer() {
 
             <div className="mt-5 flex gap-2.5">
               <SocialButton
-                href="#"
+                href="https://www.instagram.com/global_horizons_tours?igsi=MWw0bGx4NmhjdHI5ZQ=="
                 label="Instagram"
               >
                 <FaInstagram size={17} />
               </SocialButton>
 
               <SocialButton
-                href="#"
+                href="https://www.facebook.com/share/19RzbooduD/?mibextid=wwXIfr"
                 label="Facebook"
               >
                 <FaFacebookF size={16} />
               </SocialButton>
 
               <SocialButton
-                href="https://wa.me/919146945571"
+                href="https://wa.me/917770069004"
                 label="WhatsApp"
               >
                 <FaWhatsapp size={18} />
