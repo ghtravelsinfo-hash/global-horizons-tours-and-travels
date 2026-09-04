@@ -3,24 +3,24 @@ import "./globals.css";
 import FloatingActions from "@/components/FloatingActions";
 import CookieConsent from "@/components/CookieConsent";
 import AnnouncementBar from "@/components/AnnouncementBar";
-import InitialLoader from "@/components/InitialLoader";
 
 export const metadata: Metadata = {
   title: "Global Tours & Travels",
   description: "Explore the world with Global Tours & Travels",
-    icons: {
-    icon: "/favicon.ico",
-  },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-   <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-          <AnnouncementBar />
+        <AnnouncementBar />
         {children}
-          <FloatingActions />
-          <CookieConsent />
+        <FloatingActions />
+        <CookieConsent />
       </body>
     </html>
   );
