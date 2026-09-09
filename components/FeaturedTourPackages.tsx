@@ -11,24 +11,24 @@ import {
 
 const packages = [
   {
-    title: "Kashmir Escape",
-    location: "Kashmir, India",
+    title: "Aurangabad",
+    location: "Maharashtra, India",
     duration: "6 Days • 5 Nights",
-    image: "/tour-kashmir-escape.jpg",
+    image: "/aurangabad.jpg",
     tag: "Most Popular",
   },
   {
-    title: "Dubai Experience",
-    location: "Dubai, UAE",
+    title: "Shirdi",
+    location: "Maharashtra, India",
     duration: "5 Days • 4 Nights",
-    image: "/tour-dubai-experience.jpg",
-    tag: "International",
+    image: "/shirdi.jpg",
+    tag: "Heritage",
   },
   {
-    title: "Royal Rajasthan",
-    location: "Rajasthan, India",
+    title: "Western India",
+    location: "Western India, India",
     duration: "7 Days • 6 Nights",
-    image: "/tour-royal-rajasthan.jpg",
+    image: "/western-india.jpg",
     tag: "Signature Journey",
   },
 ];
