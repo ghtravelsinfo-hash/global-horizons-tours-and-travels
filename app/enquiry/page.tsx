@@ -61,25 +61,25 @@ type ContactData = {
 
 const destinations = [
   {
-    title: "Western Europe",
-    subtitle: "France, Italy, Spain...",
-    image: "/11.jpg",
-  },
-  {
-    title: "Southeast Asia",
-    subtitle: "Japan, Thailand, Vietnam...",
-    image: "/12.jpg",
-  },
-  {
-    title: "The Americas",
-    subtitle: "USA, Peru, Costa Rica...",
-    image: "/13.jpg",
-  },
-  {
-    title: "Africa & Middle East",
-    subtitle: "Kenya, Egypt, Morocco...",
-    image: "/14.jpg",
-  },
+  title: "Shambhajirao, Aurangabad",
+  subtitle: "Aurangabad, Ajanta, Ellora...",
+  image: "/11.jpg",
+},
+{
+  title: "Grishneshwar, Shani Shingnapur, Shirdi, Trimbakeshwar & Bhimashankar Tour",
+  subtitle: "Temples, Pilgrimage, Spiritual Journeys...",
+  image: "/ghrishneshwar-shani-shingnapur-shirdi-trimbakeshwar-bhimashankar-pune.png",
+},
+{
+  title: "Mumbai Tour",
+  subtitle: "Gateway of India, Marine Drive, Bollywood...",
+  image: "/13.jpg",
+},
+{
+  title: "Hyderabad",
+  subtitle: "Charminar, Golconda, Heritage & Culture...",
+  image: "/14.jpg",
+},
 ];
 
 const services = [

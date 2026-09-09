@@ -9,41 +9,50 @@ import {
 
 const packages = [
   {
-    title: "Royal Rajasthan Escape",
-    location: "Rajasthan, India",
-    duration: "7 Days / 6 Nights",
+    title: "Ajanta & Ellora Caves 1-Day Private Tour from Aurangabad",
+    location: "Aurangabad, Maharashtra, India",
+    duration: "8 to 10 Hours",
     category: "holiday",
-    travelers: "Couples & Families",
+    travelers: "Private Group (Up to 3)",
     image:
-      "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80",
+      "/packages/ellora-caves-aurangabad.png",
   },
   {
-    title: "Romantic Kashmir",
-    location: "Kashmir, India",
-    duration: "6 Days / 5 Nights",
-    category: "honeymoon",
-    travelers: "Couples",
+    title: "Grishneshwar, Shani Shingnapur, Shirdi, Trimbakeshwar & Bhimashankar Tour",
+    location: "Maharashtra, India",
+    duration: "6 Days",
+    category: "spiritual",
+    travelers: "Pilgrims & Spiritual Travelers",
     image:
-      "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
-  },
+      "/packages/ghrishneshwar-shani-shingnapur-shirdi-trimbakeshwar-bhimashankar-pune.png",
+  }
   {
-    title: "Dubai Luxury Experience",
-    location: "Dubai, UAE",
-    duration: "5 Days / 4 Nights",
+    title: "Affordable 3-Day Shirdi, Ajanta & Ellora Tour Package",
+    location: "Aurangabad, Maharashtra, India",
+    duration: "3 Days",
     category: "holiday",
-    travelers: "Families & Couples",
+    travelers: "Private Group (Up to 3)",
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "/packages/shirdi-ajanta-ellora-3-day.png",
   },
   {
-    title: "Himalayan Adventure",
-    location: "Himachal Pradesh",
-    duration: "8 Days / 7 Nights",
-    category: "adventure",
-    travelers: "Adventure Travelers",
+    title: "3-Day Spiritual & Historical Tour: Pune to Aurangabad Journey",
+    location: "Pune to Aurangabad, Maharashtra, India",
+    duration: "3 Days",
+    category: "holiday",
+    travelers: "Private Group (Up to 3)",
     image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+      "/packages/pune-bhimashankar-ellora-3-day.png",
   },
+  {
+    title: "Western & Central India Heritage Tour",
+    location: "Western & Central India",
+    duration: "11 Days",
+    category: "heritage",
+    travelers: "Culture & History Travelers",
+    image:
+      "/packages/western-central-india-heritage-11-day.png",
+},
   {
     title: "Kerala Family Retreat",
     location: "Kerala, India",
