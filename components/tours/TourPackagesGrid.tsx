@@ -25,7 +25,7 @@ const packages = [
     travelers: "Pilgrims & Spiritual Travelers",
     image:
       "/packages/ghrishneshwar-shani-shingnapur-shirdi-trimbakeshwar-bhimashankar-pune.png",
-  }
+  },
   {
     title: "Affordable 3-Day Shirdi, Ajanta & Ellora Tour Package",
     location: "Aurangabad, Maharashtra, India",
