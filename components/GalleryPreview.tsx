@@ -108,78 +108,85 @@ export default function GalleryPreview() {
           </div>
 
           {/* ================================================= */}
-          {/* ================= PREMIUM GALLERY =============== */}
+          {/* ================= MATRIX GALLERY ================= */}
           {/* ================================================= */}
 
-          <div className="relative mx-auto w-full max-w-[720px]">
+          <div className="relative mx-auto w-full max-w-[760px]">
 
-            {/* ================================================= */}
-            {/* DECORATIVE CORNERS                                */}
-            {/* ================================================= */}
-
+            {/* Decorative Gold Corner */}
             <div className="pointer-events-none absolute -left-5 -top-5 z-0 h-28 w-28 border-l border-t border-[#d9a737]" />
 
+            {/* Decorative Teal Corner */}
             <div className="pointer-events-none absolute -bottom-5 -right-5 z-0 h-28 w-28 border-b border-r border-[#14596a]/30" />
 
             {/* ================================================= */}
-            {/* GALLERY GRID                                      */}
+            {/* ================= 2 × 2 MATRIX =================== */}
             {/* ================================================= */}
 
-            <div className="relative z-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="relative z-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
 
-              {/* ================================================= */}
-              {/* ================= FEATURED IMAGE ================= */}
-              {/* ================================================= */}
+              {galleryImages.map((item, index) => (
+                <div
+                  key={item.image}
+                  className="group relative overflow-hidden rounded-[24px] border border-white bg-[#eeeae2] p-1.5 shadow-[0_16px_45px_rgba(18,63,85,0.10)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_55px_rgba(18,63,85,0.16)]"
+                >
 
-              <GalleryCard
-                image={galleryImages[0]}
-                className="sm:row-span-2"
-                height="h-[360px] sm:h-[440px]"
-                radius="rounded-tl-[90px] rounded-br-[22px]"
-              />
+                  {/* Image Frame */}
+                  <div
+                    className={`relative flex h-[260px] w-full items-center justify-center overflow-hidden rounded-[18px] bg-[#e9e6de] sm:h-[230px] lg:h-[250px] ${
+                      index === 0
+                        ? "rounded-tl-[65px]"
+                        : index === 1
+                          ? "rounded-tr-[65px]"
+                          : index === 2
+                            ? "rounded-bl-[65px]"
+                            : "rounded-br-[65px]"
+                    }`}
+                  >
 
-              {/* ================================================= */}
-              {/* ================= TOP RIGHT ====================== */}
-              {/* ================================================= */}
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 35vw"
+                      className="object-contain p-1 transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                    />
 
-              <GalleryCard
-                image={galleryImages[1]}
-                height="h-[210px] sm:h-[210px]"
-                radius="rounded-tr-[55px] rounded-bl-[18px]"
-              />
+                    {/* Soft Overlay */}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#123f55]/25 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-40" />
 
-              {/* ================================================= */}
-              {/* ================= BOTTOM RIGHT =================== */}
-              {/* ================================================= */}
+                    {/* Inner Border */}
+                    <div
+                      className={`pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/[0.045] ${
+                        index === 0
+                          ? "rounded-tl-[65px]"
+                          : index === 1
+                            ? "rounded-tr-[65px]"
+                            : index === 2
+                              ? "rounded-bl-[65px]"
+                              : "rounded-br-[65px]"
+                      }`}
+                    />
 
-              <GalleryCard
-                image={galleryImages[2]}
-                height="h-[210px] sm:h-[210px]"
-                radius="rounded-br-[55px] rounded-tl-[18px]"
-              />
+                    {/* Gold Hover Line */}
+                    <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#d9a737] transition-all duration-500 group-hover:w-full" />
 
-              {/* ================================================= */}
-              {/* ================= WIDE BOTTOM ==================== */}
-              {/* ================================================= */}
+                  </div>
 
-              <GalleryCard
-                image={galleryImages[3]}
-                className="sm:col-span-2"
-                height="h-[190px] sm:h-[180px]"
-                radius="rounded-bl-[65px] rounded-tr-[22px]"
-              />
+                </div>
+              ))}
 
             </div>
 
             {/* ================================================= */}
-            {/* PREMIUM FLOATING LABEL                            */}
+            {/* ================= FLOATING LABEL ================= */}
             {/* ================================================= */}
 
-            <div className="absolute -bottom-7 left-7 z-30">
+            <div className="absolute -bottom-7 left-8 z-30">
 
               <div className="relative rounded-2xl border border-white/30 bg-[#123f55] px-6 py-4 shadow-[0_18px_45px_rgba(18,63,85,0.24)] sm:px-7 sm:py-5">
 
-                {/* Gold Top Accent */}
+                {/* Gold Accent */}
                 <div className="absolute left-1/2 top-0 h-[3px] w-12 -translate-x-1/2 rounded-full bg-[#d9a737]" />
 
                 <p className="font-serif text-xl font-bold text-[#d9a737] sm:text-2xl">
@@ -200,71 +207,5 @@ export default function GalleryPreview() {
 
       </div>
     </section>
-  );
-}
-
-
-/* ============================================================= */
-/* ================= PREMIUM GALLERY CARD ====================== */
-/* ============================================================= */
-
-function GalleryCard({
-  image,
-  className = "",
-  height,
-  radius,
-}: {
-  image: {
-    image: string;
-    alt: string;
-  };
-  className?: string;
-  height: string;
-  radius: string;
-}) {
-  return (
-    <div
-      className={`group relative overflow-hidden border border-white bg-[#eeeae2] p-1.5 shadow-[0_16px_45px_rgba(18,63,85,0.10)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,63,85,0.15)] ${className} ${radius}`}
-    >
-
-      {/* ===================================================== */}
-      {/* IMAGE CONTAINER                                       */}
-      {/* ===================================================== */}
-
-      <div
-        className={`relative flex w-full items-center justify-center overflow-hidden bg-[#e9e6de] ${height} ${radius}`}
-      >
-
-        <Image
-          src={image.image}
-          alt={image.alt}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 45vw"
-          className="object-contain p-1 transition-transform duration-700 ease-out group-hover:scale-[1.025]"
-        />
-
-        {/* ================================================= */}
-        {/* SOFT OVERLAY                                       */}
-        {/* ================================================= */}
-
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#123f55]/25 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-40" />
-
-        {/* ================================================= */}
-        {/* INNER FRAME                                        */}
-        {/* ================================================= */}
-
-        <div
-          className={`pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/[0.045] ${radius}`}
-        />
-
-        {/* ================================================= */}
-        {/* GOLD HOVER ACCENT                                  */}
-        {/* ================================================= */}
-
-        <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#d9a737] transition-all duration-500 group-hover:w-full" />
-
-      </div>
-
-    </div>
   );
 }
