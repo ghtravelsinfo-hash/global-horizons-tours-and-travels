@@ -50,6 +50,8 @@ export default function CookieConsent() {
       })
     );
 
+    window.dispatchEvent(new Event("gh-consent-change"));
+
     setPreferences(newPreferences);
     setIsVisible(false);
   };

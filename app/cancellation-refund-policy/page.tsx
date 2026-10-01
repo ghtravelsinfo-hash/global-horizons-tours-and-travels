@@ -1,5 +1,13 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Cancellation & Refund Policy",
+  description: "Cancellation terms and refund process for tours and transport bookings with Global Horizons Tours & Travels.",
+  path: "/cancellation-refund-policy",
+});
+
 export default function CancellationRefundPolicyPage() {
   const sections = [
     {

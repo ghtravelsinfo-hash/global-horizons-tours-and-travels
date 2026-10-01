@@ -2,6 +2,14 @@ import LegalPageLayout from "@/components/LegalPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Booking Policy",
+  description: "Read how bookings, confirmations and itinerary changes work with Global Horizons Tours & Travels.",
+  path: "/booking-policy",
+});
+
 export default function BookingPolicyPage() {
   const sections = [
     {

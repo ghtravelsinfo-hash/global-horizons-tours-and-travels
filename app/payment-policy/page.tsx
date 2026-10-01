@@ -1,5 +1,13 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Payment Policy",
+  description: "Accepted payment methods and payment terms for Global Horizons Tours & Travels bookings.",
+  path: "/payment-policy",
+});
+
 export default function PaymentPolicyPage() {
   const sections = [
     {

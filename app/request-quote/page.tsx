@@ -6,6 +6,15 @@ import QuoteForm from "@/components/request-quote/QuoteForm";
 import WhyChooseUs from "@/components/request-quote/WhyChooseUs";
 import QuoteContactInfo from "@/components/request-quote/QuoteContactInfo";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Request a Free Tour Quote",
+  description: "Share your destination, dates and number of travellers to receive a personalised tour quotation from Global Horizons Tours & Travels.",
+  path: "/request-quote",
+  keywords: ["tour quote Aurangabad", "free travel quote"],
+});
+
 export default function RequestQuotePage() {
   return (
     <>

@@ -2,6 +2,14 @@ import LegalHero from "@/components/legal/LegalHero";
 import LegalContent from "@/components/legal/LegalContent";
 import LegalNavigation from "@/components/legal/LegalNavigation";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Cookie Policy",
+  description: "How Global Horizons Tours & Travels uses cookies and how you can manage your preferences.",
+  path: "/cookie-policy",
+});
+
 export default function CookiePolicyPage() {
   const sections = [
     {

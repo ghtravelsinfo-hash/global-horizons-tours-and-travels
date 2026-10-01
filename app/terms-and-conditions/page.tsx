@@ -1,5 +1,13 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Terms & Conditions",
+  description: "Terms and conditions for using the Global Horizons Tours & Travels website and services.",
+  path: "/terms-and-conditions",
+});
+
 export default function TermsAndConditionsPage() {
   const sections = [
     {

@@ -99,10 +99,10 @@ export default function LegalContent({
 
         <div className="mt-5 flex flex-col gap-2 text-sm sm:flex-row sm:gap-6">
           <a
-            href="tel:+919146945571"
+            href="tel:+917770069004"
             className="font-medium text-[#14596a] transition hover:text-[#d9a737]"
           >
-            +91 91469 45571
+            +91 77700 69004
           </a>
 
           <a

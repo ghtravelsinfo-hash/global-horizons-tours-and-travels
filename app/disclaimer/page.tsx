@@ -1,5 +1,13 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Disclaimer",
+  description: "Important disclaimers about travel information and services provided by Global Horizons Tours & Travels.",
+  path: "/disclaimer",
+});
+
 export default function DisclaimerPage() {
   const sections = [
     {

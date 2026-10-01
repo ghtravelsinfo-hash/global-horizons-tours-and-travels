@@ -1,5 +1,6 @@
 "use client";
 
+import { trackLead } from "@/lib/analytics";
 import { FormEvent, useState } from "react";
 import { Send, ShieldCheck, Loader2 } from "lucide-react";
 
@@ -265,6 +266,8 @@ ${
     /* =====================================================
        OPEN WHATSAPP
     ===================================================== */
+
+    trackLead("transport_quote");
 
     window.open(
       whatsappURL,

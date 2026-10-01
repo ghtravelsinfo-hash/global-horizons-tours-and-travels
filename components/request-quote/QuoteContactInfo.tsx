@@ -111,13 +111,13 @@ export default function QuoteContactInfo() {
         <div className="mt-6 space-y-4">
 
           <a
-            href="tel:+919146945571"
+            href="tel:+917770069004"
             className="flex items-center gap-3 text-sm text-white/75 transition hover:text-white"
           >
 
             <Phone size={16} className="text-[#e5b34d]" />
 
-            +91 91469 45571
+            +91 77700 69004
 
           </a>
 

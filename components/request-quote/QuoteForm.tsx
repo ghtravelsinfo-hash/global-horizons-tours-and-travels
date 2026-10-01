@@ -1,5 +1,6 @@
 "use client";
 
+import { trackLead } from "@/lib/analytics";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   Send,
@@ -387,6 +388,8 @@ ${data.message || "No additional message provided."}
     /* =====================================================
         OPEN WHATSAPP
     ===================================================== */
+
+    trackLead("travel_quote");
 
     window.open(
       whatsappURL,

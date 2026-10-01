@@ -202,7 +202,7 @@ export default function QuickTravelAssistant() {
       case "expert":
       case "call":
       case "call-support":
-        window.location.href = "tel:+919860577147";
+        window.location.href = "tel:+917770069004";
         break;
 
       case "transport-booking":

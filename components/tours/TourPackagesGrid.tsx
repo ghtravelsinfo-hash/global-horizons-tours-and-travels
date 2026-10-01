@@ -7,7 +7,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const packages = [
+export const packages = [
   {
     title: "Ajanta & Ellora Caves 1-Day Private Tour from Aurangabad",
     location: "Aurangabad, Maharashtra, India",

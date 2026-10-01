@@ -10,8 +10,8 @@ const contactItems = [
   {
     title: "Call Us",
     description: "Speak directly with our travel specialists.",
-    value: "+91 91469 45571",
-    href: "tel:+919146945571",
+    value: "+91 77700 69004",
+    href: "tel:+917770069004",
     icon: Phone,
   },
   {
@@ -32,7 +32,7 @@ const contactItems = [
     title: "WhatsApp",
     description: "Quick assistance for your travel enquiries.",
     value: "Chat With Us",
-    href: "https://wa.me/919146945571",
+    href: "https://wa.me/917770069004",
     icon: MessageCircle,
   },
 ];

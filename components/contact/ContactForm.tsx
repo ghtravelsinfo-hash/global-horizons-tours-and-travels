@@ -1,5 +1,6 @@
 "use client";
 
+import { trackLead } from "@/lib/analytics";
 import { useState } from "react";
 import {
   User,
@@ -195,6 +196,8 @@ New enquiry received from the website.
     /* =====================================================
         OPEN WHATSAPP
     ===================================================== */
+
+    trackLead("contact_form");
 
     window.open(
       whatsappURL,

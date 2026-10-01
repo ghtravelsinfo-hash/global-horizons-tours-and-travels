@@ -1,5 +1,13 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
 
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Privacy Policy",
+  description: "How Global Horizons Tours & Travels collects, uses and protects your personal information.",
+  path: "/privacy-policy",
+});
+
 export default function PrivacyPolicyPage() {
   const sections = [
     {
@@ -99,7 +107,7 @@ export default function PrivacyPolicyPage() {
       title: "Contact Us",
       content: [
         "If you have questions or concerns regarding this Privacy Policy or the handling of your personal information, please contact Global Horizon Tours & Travels.",
-        "Email: ghtravelsinfo@gmail.com | Phone: +91 91469 45571",
+        "Email: ghtravelsinfo@gmail.com | Phone: +91 77700 69004",
       ],
     },
   ];

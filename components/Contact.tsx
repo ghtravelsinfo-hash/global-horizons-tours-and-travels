@@ -282,7 +282,7 @@ window.open(url, "_blank", "noopener,noreferrer");
 
                 <iframe
                   title="Global Tours Location"
-                  src="https://www.google.com/maps?q=Chhatrapati%20Sambhajinagar%2C%20Maharashtra%2C%20India&output=embed"
+                  src="https://www.google.com/maps?q=19.8952399,75.3417461&z=17&output=embed"
                   className="absolute inset-0 h-full w-full border-0"
                   loading="lazy"
                 />
@@ -309,7 +309,7 @@ window.open(url, "_blank", "noopener,noreferrer");
                       </p>
 
                       <a
-                        href="https://www.google.com/maps/search/?api=1&query=Chhatrapati+Sambhajinagar+Maharashtra+India"
+                        href="https://www.google.com/maps/search/?api=1&query=19.8952399,75.3417461"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-3 inline-flex items-center gap-2 text-xs font-semibold tracking-[1px] text-[#14596a] transition hover:text-[#dc6945]"
@@ -421,7 +421,7 @@ window.open(url, "_blank", "noopener,noreferrer");
                   <div className="mt-5 space-y-5">
 
                     <a
-                      href="tel:+919860577147"
+                      href="tel:+917770069004"
                       className="group flex items-center gap-3"
                     >
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#e7eef0] transition group-hover:bg-[#14596a]">
@@ -437,7 +437,7 @@ window.open(url, "_blank", "noopener,noreferrer");
                         </p>
 
                         <p className="text-sm font-medium text-gray-800">
-                          +91 98605 77147
+                          +91 77700 69004
                         </p>
                       </div>
                     </a>
@@ -485,7 +485,7 @@ window.open(url, "_blank", "noopener,noreferrer");
       </p>
 
       <p className="text-sm font-medium text-gray-800">
-        +91 777006 9004
+        +91 77700 69004
       </p>
     </div>
   </a>

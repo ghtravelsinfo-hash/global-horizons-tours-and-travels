@@ -67,7 +67,7 @@ export default function ContactMap() {
             <div className="relative h-[400px] overflow-hidden">
 
               <iframe
-                src="https://www.google.com/maps?q=Collector+Office+Road+Ganesh+Colony+Chhatrapati+Sambhajinagar&output=embed"
+                src="https://www.google.com/maps?q=19.8952399,75.3417461&z=17&output=embed"
                 width="100%"
                 height="100%"
                 loading="lazy"

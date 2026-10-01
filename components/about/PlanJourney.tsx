@@ -72,7 +72,7 @@ export default function PlanJourney() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/919146945571"
+              href="https://wa.me/917770069004"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex h-[56px] min-w-[210px] items-center justify-center gap-3 rounded-xl border border-[#14596a]/20 bg-[#faf9f6] px-8 text-[13px] font-semibold tracking-[0.5px] text-[#14596a] transition duration-300 hover:-translate-y-1 hover:border-[#14596a]/40 hover:bg-white hover:shadow-[0_15px_30px_rgba(20,89,106,0.10)]"
